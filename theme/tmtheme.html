@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>theresa ma</title>
+		<link rel="SHORTCUT ICON" href="favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet" href = "tmtheme.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+
+		<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+
+		<script type="text/javascript" src = "http://static.tumblr.com/nlvgygx/brzmz1zza/tmtheme.js"></script>
+
+	</head>
+
+	<body>
+		<! fixed sidebar section>
+		<section id = "sidebar">
+
+     	 <div id = "buttonWrapper">
+
+     	 	<div id = "header">
+     	 		<a href = "http://blog.theresa-ma.com"><h1 class = "title">theresa ma</h1>
+     	 		<h2 class = "subtitle">A DEVELOPER IN DEVELOPMENT</h2></a>
+     	 	</div>
+
+     	 	<a href = "http://theresa-ma.com/about"><div class = "headings" id = "about"><h1>a b o u t</h1><div class = "slidePanel" id = "aboutPanel">
+     	 	</div></div></a>
+
+     	 	<div class = "headings" id = "blog"><h1>b l o g</h1><div class = "slidePanel" id = "blogPanel">
+
+     	 		<center><p><a class = "slideLink" href = "http://blog.theresa-ma.com">posts</a> <br>
+     	 			<a class = "slideLink" href = "http://blog.theresa-ma.com/archive">archive</a></p></center>
+
+     	 	</div></div>
+     	 	
+     	 	<a href = "http://theresa-ma.com/projects"><div class = "headings" id = "projects"><h1>p r o j e c t s</h1><div class = "slidePanel" id = "projectsPanel">
+
+     	 	</div></div></a>
+
+     	 	<a href = "http://theresa-ma.com/resume"><div class = "headings" id = "resume"><h1>r e s u m e</h1><div class = "slidePanel" id = "resumePanel">
+
+     	 	</div></div></a>
+
+     	 	<div class = "headings" id = "contact"><h1>c o n t a c t</h1><div class = "slidePanel" id = "contactPanel">
+
+     	 		<center><a href = "mailto:theresa.ma@mail.utoronto.ca" target = "_blank"><img src = "email.png"></a>
+     	 		<a href = "http://twitter.com/theresamatweets" target = "_blank"><img src = "twitter.png"></a>
+     	 		<a href = "http://www.linkedin.com/pub/theresa-ma/64/57b/478" target = "_blank"><img src = "linkedin.png"></a></center>
+
+     	 	</div></div>
+
+     	 </div>
+     	</section>
+
+		<! tumblr posts section>
+
+		<section id = "tumblr">
+
+        <ol id="posts">
+            {block:Posts}
+
+            {block:Text}
+                    <li class="postText">
+                        {block:Title}
+                            <a href="{Permalink}"><h2 class = "title">{Title}</h2></a>
+                        {/block:Title}
+                        <h3 class = "date">{DayOfMonthWithZero} {Month} {ShortYear} </h3>
+                        <p class = "textBody">{Body}</p>
+                    </li>
+            {/block:Text}
+
+            {block:Photo}
+                    <li class="post photo">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+
+            {/block:Photo}
+
+            {block:Panorama}
+                    <li class="post panorama">
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                        {LinkCloseTag}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+            {/block:Panorama}
+
+            {block:Photoset}
+                    <li class="post photoset">
+                        {Photoset-500}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+            {/block:Photoset}
+
+            {block:Quote}
+                    <li class="post quote">
+                        "{Quote}"
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </li>
+            {/block:Quote}
+
+            {block:Link}
+                    <li class="post link">
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </li>
+            {/block:Link}
+
+            {block:Chat}
+                    <li class="post chat">
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}{Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </li>
+            {/block:Chat}
+
+            {block:Video}
+                    <li class="post video">
+                        {Video-500}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+            {/block:Video}
+
+            {block:Audio}
+                    <li class="post audio">
+                        {AudioPlayerBlack}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+                    </li>
+            {/block:Audio}
+
+            {/block:Posts}
+        </ol>
+
+    </section>
+
+
+
+
+
+	</body>
+
+</html>

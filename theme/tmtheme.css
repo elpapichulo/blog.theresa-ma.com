@@ -1,0 +1,211 @@
+
+html, body{ 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+  padding:0; 
+}
+
+#sidebar{
+  width: 33%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: fixed;
+  background-color: #272727;
+  overflow: auto;
+}
+
+#tumblr{
+  width: 66%;
+  height: 100%;
+  float: right;
+}
+
+
+#buttonWrapper{
+  background-color: #272727;
+  width: 100%;
+  position: relative;
+  display: block;;
+  z-index: 1;
+}
+
+#header{
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding-top: 17%;
+  padding-bottom: 12%;
+}
+
+.title{
+  font: 4.1em  'Petrona';
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 0.6em;
+  letter-spacing: 0.08em;
+}
+
+.subtitle {
+  font: 1.1em  'Vani';
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  letter-spacing: 0.15em;
+}
+
+
+.headings{
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 2.7%;
+  margin-bottom: 2px;
+  width: 50%;
+  display: block;
+  transition: width 1s ease, height 1s ease;
+  -webkit-transition: width 1s ease, height 1s ease; /* Safari */
+}
+
+.headings h1{
+  font: 1.2em "Vani";
+  display: block;
+  background-color: #272727;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px;
+  padding-top: 0.125em;
+  transition: width 0.5s ease, height 0.5s ease;
+  -webkit-transition: width 0.5s ease, height 0.5s ease; /* Safari */
+}
+
+.headings h1:hover{
+  font-weight: bold;
+}
+
+.headingsWider{
+  background-color: #272727;
+  margin: auto;
+  display: block;
+  padding-bottom: 4%;
+  padding-top: 4%
+  transition: width 0.5s ease, height 0.5s ease;
+  -webkit-transition: width 0.5s ease, height 0.5s ease; /* Safari */
+}
+
+.slidePanel{
+  display: none;
+  background: #272727;
+  margin: auto;
+}
+
+.slidePanel img{
+  width: 2.1em;
+  margin: 0.5em;
+  display: inline-block;
+}
+
+.slidePanel h2{
+  font: 2em "Corbel", "Lucida Sans Unicode", "Lucida Grande", "Bitstream Vera Sans", "Luxi Serif", "Verdana", sans-serif;
+  color: #fbc021;
+}
+
+.slidePanel p{
+  font: 1.4em "Corbel", "Lucida Sans Unicode", "Lucida Grande", "Bitstream Vera Sans", "Luxi Serif", "Verdana", sans-serif;
+  color: #ffffff;
+  margin: auto;
+}
+
+.slidePanel h3{
+  font: 1.5em "Corbel", "Lucida Sans Unicode", "Lucida Grande", "Bitstream Vera Sans", "Luxi Serif", "Verdana", sans-serif;
+  color: #272727;
+  text-align: center;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+a.slideLink{
+  font: 0.7em "Vani";
+  letter-spacing: 0.125em;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+a, img {
+    border:none;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Vani';
+  src: url('Vani.ttf') format('truetype');
+}
+
+#posts{
+  width: 80%;
+  margin: 2.5em;
+  list-style: none;
+}
+
+.postText{
+  list-style: none;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 2em;
+}
+
+h2.title{
+  font: 3.1em "Vani";
+  letter-spacing: 0.16em;
+  line-height: 1em;
+  color: #fbc021;
+  text-decoration: none;
+  text-align: left;
+  margin: 0;
+  opacity: 1;
+  transition: 0.5s ease;
+    -webkit-transition: 0.5 ease; /* Safari */
+}
+
+h2.title:hover{
+    opacity: 0.7;
+    transition: 0.5 ease;
+    -webkit-transition: 0.5 ease; /* Safari */
+}
+
+h3.date{
+  font: 1.5em "Corbel";
+  line-height: 0.5em;
+  color: #26c29c;
+  text-decoration: none;
+  text-align: left;
+  margin: 0;
+}
+
+body {
+  font: 1.1em "Corbel", "Lucida Sans Unicode", "Lucida Grade", "Bitstream Vera Sans", "Luxi Serif", Verdana, sans-serif;
+  color: #272727;
+  text-decoration: none;
+  text-align: justify;
+  padding: 1en;
+}
+
+a {
+    color: #26c29c;
+    -webkit-transition: 0.5s ease; 
+    -moz-transition: 0.5s ease; 
+    transition: 0.5s ease;
+}
+
+a:hover{
+    font-weight: bold;
+    -webkit-transition: 0.5s ease; 
+    -moz-transition: 0.5s ease; 
+    transition: 0.5s ease;
+}
+
